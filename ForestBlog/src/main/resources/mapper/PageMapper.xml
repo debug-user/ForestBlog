@@ -13,7 +13,7 @@
     <result column="page_status" property="pageStatus" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    page_id, page_key, page_title, page_content, page_create_time, page_update_time, 
+    page_id, page_key, page_title, page_content, page_create_time, page_update_time,
     page_view_count, page_comment_count, page_status
   </sql>
 

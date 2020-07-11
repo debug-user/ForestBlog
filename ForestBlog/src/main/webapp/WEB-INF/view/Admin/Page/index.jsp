@@ -25,17 +25,17 @@
     <form id="pageForm" method="post">
         <table class="layui-table">
             <colgroup>
-                <col width="50">
+                <%--<col width="50">
+                <col width="50">--%>
                 <col width="50">
                 <col width="100">
-                <col width="200">
                 <col width="50">
                 <col width="100">
             </colgroup>
             <thead>
             <tr>
-                <th>id</th>
-                <th>key</th>
+                <%--<th>id</th>
+                <th>key</th>--%>
                 <th>标题</th>
                 <th>内容</th>
                 <th>状态</th>
@@ -46,8 +46,8 @@
             <c:forEach items="${pageList}" var="p">
                 <c:if test="${p.pageStatus!=2}">
                     <tr>
-                        <td>${p.pageId}</td>
-                        <td>${p.pageKey}</td>
+                        <%--<td>${p.pageId}</td>
+                        <td>${p.pageKey}</td>--%>
                         <td>
                             ${p.pageTitle}
                         </td>

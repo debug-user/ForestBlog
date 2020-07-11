@@ -214,4 +214,11 @@ public interface ArticleService {
      * @return 列表
      */
     List<Article> listAllNotWithContent();
+
+    /**
+     * 置顶文章
+     *
+     * @param articleId 文章ID
+     */
+    void updateArticleTopByArticleId(Integer updatedArticleTop, Integer articleId);
 }

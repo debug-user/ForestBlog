@@ -1,7 +1,9 @@
 package com.liuyanzhao.ssm.blog.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
+import java.beans.Transient;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -40,10 +42,11 @@ public class Article implements Serializable{
 
     private String articleSummary;
 
-    private User user;
+    private Integer articleTop;
 
-    private List<Tag> tagList;
+    private transient User user;
 
-    private List<Category> categoryList;
+    private transient List<Tag> tagList;
 
+    private transient List<Category> categoryList;
 }

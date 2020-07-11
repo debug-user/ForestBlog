@@ -11,6 +11,7 @@ import com.liuyanzhao.ssm.blog.service.TagService;
 import com.liuyanzhao.ssm.blog.entity.Category;
 import com.liuyanzhao.ssm.blog.entity.Tag;
 import com.liuyanzhao.ssm.blog.entity.User;
+import org.checkerframework.common.reflection.qual.GetMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -137,6 +138,13 @@ public class BackArticleController {
         articleService.deleteArticle(id);
     }
 
+    /**
+     * 置顶文章
+     */
+    @RequestMapping(value = "reachTop/{id}")
+     public void reachTopArticle(@PathVariable("id") Integer id) {
+        articleService.updateArticleTopByArticleId(2,id);
+    }
 
     /**
      * 编辑文章页面显示

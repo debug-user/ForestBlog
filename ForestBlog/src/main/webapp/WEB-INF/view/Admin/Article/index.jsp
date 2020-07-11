@@ -93,6 +93,9 @@
                             <a href="javascript:void(0)"
                                onclick="deleteArticle(${a.articleId})"
                                class="layui-btn layui-btn-danger layui-btn-mini">删除</a>
+                            <a href="javascript:void(0)"
+                               onclick="reachTopArticle(${a.articleId})"
+                               class="layui-btn layui-btn-normal layui-btn-mini">置顶</a>
                         </td>
                         <td>${a.articleId}</td>
                     </tr>

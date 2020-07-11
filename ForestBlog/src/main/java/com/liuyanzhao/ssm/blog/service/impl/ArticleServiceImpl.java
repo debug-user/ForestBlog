@@ -263,5 +263,7 @@ public class ArticleServiceImpl implements ArticleService {
         return articleMapper.listAllNotWithContent();
     }
 
-
+    public void updateArticleTopByArticleId(Integer updatedArticleTop, Integer articleId) {
+        articleMapper.updateArticleTopAndArticleUpdateTimeByArticleId(updatedArticleTop, articleId);
+    }
 }
